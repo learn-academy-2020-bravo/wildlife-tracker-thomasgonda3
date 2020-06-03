@@ -470,3 +470,153 @@ Processing by AnimalsController#show as */*
 Completed 200 OK in 56ms (Views: 0.1ms | ActiveRecord: 33.8ms | Allocations: 10147)
 
 
+Started GET "/sightings/" for ::1 at 2020-06-03 13:33:15 -0700
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SightingsController#index as */*
+  Parameters: {"sighting"=>{"longitude"=>"23"}}
+  [1m[36mSighting Load (5.1ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings"[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 105ms (Views: 59.5ms | ActiveRecord: 36.1ms | Allocations: 5531)
+
+
+Started GET "/sightings/2018-06-05T06:05:42.000Z/2019-07-28T07:15:02.000Z" for ::1 at 2020-06-03 13:36:30 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/sightings/2018-06-05T06:05:42.000Z/2019-07-28T07:15:02.000Z"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/sightings/2018-06-05T06:05:42.000Z/2019-07-28T07:15:02.000Z" for ::1 at 2020-06-03 13:39:26 -0700
+  
+ActionController::RoutingError (No route matches [GET] "/sightings/2018-06-05T06:05:42.000Z/2019-07-28T07:15:02.000Z"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/sightings" for ::1 at 2020-06-03 13:42:35 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"sighting"=>{"longitude"=>"23"}}
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE 1=1[0m
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 8.6ms | ActiveRecord: 3.3ms | Allocations: 5379)
+
+
+Started GET "/sightings?start_date=2018-06-05T06:05:42.000Z&end_date=2020-06-05T06:05:42.000Z" for ::1 at 2020-06-03 13:44:01 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"sighting"=>{"longitude"=>"23"}, "start_date"=>"2018-06-05T06:05:42.000Z", "end_date"=>"2020-06-05T06:05:42.000Z"}
+  [1m[36mSighting Load (0.2ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."date" BETWEEN $1 AND $2[0m  [["date", "2018-06-05 06:05:42"], ["date", "2020-06-05 06:05:42"]]
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 47ms (Views: 39.7ms | ActiveRecord: 4.7ms | Allocations: 5213)
+
+
+Started GET "/sightings?start_date=2018-06-05T06:05:42.000Z&end_date=2019-06-05T06:05:42.000Z" for ::1 at 2020-06-03 13:44:11 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"sighting"=>{"longitude"=>"23"}, "start_date"=>"2018-06-05T06:05:42.000Z", "end_date"=>"2019-06-05T06:05:42.000Z"}
+  [1m[36mSighting Load (0.5ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."date" BETWEEN $1 AND $2[0m  [["date", "2018-06-05 06:05:42"], ["date", "2019-06-05 06:05:42"]]
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 1249)
+
+
+Started GET "/sightings?start_date=2018-06-05T06:05:42.000Z&end_date=2019-06-05T06:05:42.000Z" for ::1 at 2020-06-03 13:44:29 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"sighting"=>{"longitude"=>"23"}, "start_date"=>"2018-06-05T06:05:42.000Z", "end_date"=>"2019-06-05T06:05:42.000Z"}
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 19.0ms | Allocations: 1642)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column sightings.start_date does not exist
+LINE 1: SELECT "sightings".* FROM "sightings" WHERE "sightings"."sta...
+                                                    ^
+):
+  
+app/controllers/sightings_controller.rb:4:in `index'
+Started GET "/sightings?start_date=2018-06-05T06:05:42.000Z&end_date=2019-06-05T06:05:42.000Z" for ::1 at 2020-06-03 13:44:40 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"sighting"=>{"longitude"=>"23"}, "start_date"=>"2018-06-05T06:05:42.000Z", "end_date"=>"2019-06-05T06:05:42.000Z"}
+  [1m[36mSighting Load (0.4ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."date" BETWEEN $1 AND $2[0m  [["date", "2018-06-05 06:05:42"], ["date", "2019-06-05 06:05:42"]]
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 8.1ms | ActiveRecord: 3.8ms | Allocations: 5009)
+
+
+Started GET "/sightings?start_date=2018-06-05T06:05:42.000Z&end_date=2019-06-05T06:05:42.000Z" for ::1 at 2020-06-03 13:49:03 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"sighting"=>{"longitude"=>"23"}, "start_date"=>"2018-06-05T06:05:42.000Z", "end_date"=>"2019-06-05T06:05:42.000Z"}
+  [1m[36mSighting Load (2.8ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."date" BETWEEN $1 AND $2[0m  [["date", "2018-06-05 06:05:42"], ["date", "2019-06-05 06:05:42"]]
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 7ms (Views: 2.5ms | ActiveRecord: 2.8ms | Allocations: 1235)
+
+
+Started GET "/sightings?start_date=2018-06-05T06:05:42.000Z&end_date=2019-06-05T06:05:42.000Z" for ::1 at 2020-06-03 13:57:25 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"sighting"=>{"longitude"=>"23"}, "start_date"=>"2018-06-05T06:05:42.000Z", "end_date"=>"2019-06-05T06:05:42.000Z"}
+[31mUnpermitted parameter: :longitude[0m
+[31mUnpermitted parameter: :longitude[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 6.1ms | Allocations: 1729)
+
+
+  
+TypeError (can't cast ActionController::Parameters):
+  
+app/controllers/sightings_controller.rb:4:in `index'
+Started GET "/sightings?start_date=2018-06-05T06:05:42.000Z&end_date=2019-06-05T06:05:42.000Z" for ::1 at 2020-06-03 13:58:58 -0700
+Processing by SightingsController#index as */*
+  Parameters: {"sighting"=>{"longitude"=>"23"}, "start_date"=>"2018-06-05T06:05:42.000Z", "end_date"=>"2019-06-05T06:05:42.000Z"}
+  [1m[36mSighting Load (1.8ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."date" BETWEEN $1 AND $2[0m  [["date", "2018-06-05 06:05:42"], ["date", "2019-06-05 06:05:42"]]
+  ↳ app/controllers/sightings_controller.rb:4:in `index'
+Completed 200 OK in 234ms (Views: 55.3ms | ActiveRecord: 176.8ms | Allocations: 5104)
+
+
