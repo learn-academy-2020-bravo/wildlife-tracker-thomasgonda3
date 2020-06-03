@@ -434,3 +434,39 @@ Processing by SightingsController#index as */*
 Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 1.1ms | Allocations: 1225)
 
 
+  [1m[36mAnimal Load (0.4ms)[0m  [1m[34mSELECT "animals".* FROM "animals" ORDER BY "animals"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSighting Load (1.3ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1 LIMIT $2[0m  [["animal_id", "1"], ["LIMIT", 11]]
+Started GET "/animals/1" for ::1 at 2020-06-03 11:54:05 -0700
+  [1m[35m (25.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AnimalsController#show as */*
+  Parameters: {"sighting"=>{"longitude"=>"23"}, "id"=>"1", "animal"=>{}}
+  [1m[36mAnimal Load (1.2ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+  [1m[36mSighting Load (0.7ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", "1"]]
+  ↳ app/controllers/animals_controller.rb:10:in `show'
+Completed 200 OK in 242ms (Views: 0.4ms | ActiveRecord: 45.6ms | Allocations: 12995)
+
+
+Started GET "/animals/1" for ::1 at 2020-06-03 11:54:25 -0700
+  
+SyntaxError (/Users/learnacademy/Desktop/wildlife-tracker-thomasgonda3/app/controllers/animals_controller.rb:10: syntax error, unexpected '(', expecting `end'
+    render json: @animal(include: :sightings)
+                        ^
+/Users/learnacademy/Desktop/wildlife-tracker-thomasgonda3/app/controllers/animals_controller.rb:45: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/animals_controller.rb:10: syntax error, unexpected '(', expecting `end'
+app/controllers/animals_controller.rb:45: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/animals_controller.rb:10: syntax error, unexpected '(', expecting `end'
+app/controllers/animals_controller.rb:45: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/animals_controller.rb:10: syntax error, unexpected '(', expecting `end'
+app/controllers/animals_controller.rb:45: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/animals/1" for ::1 at 2020-06-03 11:56:18 -0700
+Processing by AnimalsController#show as */*
+  Parameters: {"sighting"=>{"longitude"=>"23"}, "id"=>"1", "animal"=>{}}
+  [1m[36mAnimal Load (0.3ms)[0m  [1m[34mSELECT "animals".* FROM "animals" WHERE "animals"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/animals_controller.rb:8:in `show'
+  [1m[36mSighting Load (0.5ms)[0m  [1m[34mSELECT "sightings".* FROM "sightings" WHERE "sightings"."animal_id" = $1[0m  [["animal_id", "1"]]
+  ↳ app/controllers/animals_controller.rb:10:in `show'
+Completed 200 OK in 56ms (Views: 0.1ms | ActiveRecord: 33.8ms | Allocations: 10147)
+
+
