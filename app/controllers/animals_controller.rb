@@ -14,7 +14,7 @@ class AnimalsController < ApplicationController
     if @animal.valid?
       render json: @animal
     else
-      render json: @animal.errors
+      raise(ActionController::InvalidAuthenticityToken)
     end
   end
 
